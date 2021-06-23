@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block titulo %}
+    Lista de Mascotas
+{% endblock titulo %}
+
+{% block contenido %}
+    <div><center><h1>Lista de Mascotas</h1></center>
+    <center> <ul>
+
+    <table border = 2>
+        <tr><td>ID</td><td>Codigo</td><td>Nombre</td><td>Borrar</td></tr>
+        {% for mascota in mascotas%}
+        
+            <h1><tr><td>{{mascota.id}}</td><td>{{mascota.codigo}}</td><td>{{mascota.nombre}}</td> <td> - <a href="{% url 'borrarmascota' mascota.id %}">Borrar Mascota</td></a><br/></tr></h1>
+
+
+            
+        
+
+        {% endfor %}
+    </table> </ul> </center></div>
+
+     
+    
+{% endblock  %}

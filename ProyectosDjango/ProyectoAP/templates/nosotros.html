@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'fonts/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Nosotros</title>
+</head>
+<body background="{% static 'img/original.jpg' %}" >
+    <div>
+        <div>
+            <header id="inicio">
+                <div>
+                    <section class="logo">
+                        <img src="{% static '' %}" alt="">
+                        <img class="fotos-fin2" src="{% static 'img/nombre.png' %}" alt="">
+                    </section> 
+                </div>
+                    <nav>
+			      <a href="/#myCarousel">Inicio</a>
+                  <a href="/nosotros">Nosotros</a>
+			      <a href="/perros">Perros</a>
+                  <a href="/gatos">Gatos</a>
+                  <a href="/contacto">Contáctanos</a>
+                  <a href="/Clima">Clima</a>
+                  <a href="/geolocal">Ubicacion</a>
+                  <a href="/nuevaMascota">Agregar</a>
+                  <a href="/listamascotas">Lista</a>
+                    </nav>                     
+            </header>
+       </div>
+       <div>
+            <section id=productos-s>
+                <h2 class="textop-s">Ayuda a un peludo</h2>
+                <img class= "foto-nosotros" src="{% static 'img/nosotros.jpg' %}" /> 
+                <h2 class="textop-sp2">En nuestro equipo buscamos brindar el mejor servicio de Atención Veterinaria dentro de Santiago, enfocándonos en dar atenciones de Urgencia, Control y Tratamientos a Domicilio, 
+                    Junto con Derivar y Atender a nuestros pacientes en las Clínicas asociadas. 
+                    Dándole curso a cada atención por la vía de especialistas y procedimientos mas adecuada para solucionar cualquier tipo de necesidades por parte de nuestros clientes.
+            </section>
+        </div>
+        <div>
+            <footer id="pie" style="padding-top: 0px;">
+                <p class="texto11">Veterinaria AAUP Ltda. © 2021</p> 
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>

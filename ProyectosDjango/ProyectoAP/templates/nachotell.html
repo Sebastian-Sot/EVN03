@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'fonts/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Nachitotell</title>
+</head>
+<body background="{% static 'img/original.jpg' %}" >
+    <div>
+        <div>
+            <header id="inicio">
+                <div>
+                    <section class="logo">
+                        <img src="{% static 'img/huellas.png' %}" alt="">
+                        <img class="fotos-fin2" src="{% static 'img/nombre.png' %}" alt="">
+                    </section> 
+                </div>
+                <div>
+                    <nav>
+			      <a href="/#myCarousel">Inicio</a>
+                  <a href="/nosotros">Nosotros</a>
+			      <a href="/perros">Perros</a>
+                  <a href="/gatos">Gatos</a>
+                  <a href="/contacto">Contáctanos</a>
+                  <a href="/Clima">Clima</a>
+                  <a href="/geolocal">Ubicacion</a>
+                  <a href="/nuevaMascota">Agregar</a>
+                  <a href="/listamascotas">Lista</a>
+                    </nav>  
+                </div>   
+            </header>
+       </div>
+        <div>
+            <section id=productos-s>
+                <h2 class="textop-s">Nachitotell:</h2>
+                <img class= "foto-productos-s" src="{% static 'img/nachitotell.jpg' %}" /> 
+                <h2 class="textop-sp">Un perro de edad prematura, que es muy amigable con las personas,<br>
+                no ladra mucho y se comporta muy bien
+                </h2></br> 
+                <h2 class="textop-s1">Descripcion:<br> 
+                    -Edad: 2 Meses</br> 
+                    -Sexo: Masculino<br>
+                    -Color:blanco y cafe</br>
+                    -Raza: Desconocida<br>
+                    -Esterelizado: Si</br>
+                    -Numero de chip:965377307104839<br></h2></br>
+                <a href="/Formulario" class="textop-s"  >Adoptar </a>
+            </section>
+        </div>
+        <div>
+            <footer id="pie">
+                <p class="texto11">Veterinaria AAUP Ltda. © 2021</p>    
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
