@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'fonts/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script src="{% static 'js/scriptform.js' %}"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <title>{% block titulo %}
+              <!--Titulo de cada página-->
+           {% endblock  %}</title>
+</head>
+<body background="{% static 'img/original.jpg' %}" >
+    <div>
+        <div>
+            <header id="inicio">
+                <div>
+                    <section class="logo">
+                        <img src="{% static 'img/huellas.png' %}" alt="">
+                        <img class="fotos-fin2" src="{% static 'img/nombre.png' %}" alt="">
+                    </section> 
+                </div>
+                <div>
+                    <nav>
+			      <a href="/#myCarousel">Inicio</a>
+                  <a href="/nosotros">Nosotros</a>
+			      <a href="/perros">Perros</a>
+                  <a href="/gatos">Gatos</a>
+                  <a href="/contacto">Contáctanos</a>
+                  <a href="/Clima">Clima</a>
+                  <a href="/geolocal">Ubicacion</a>
+                  <a href="/nuevaMascota">Agregar</a>
+                  <a href="/listamascotas">Lista</a>
+                    </nav>  
+                </div>    
+            </header>
+        </div>
+        <div>
+            {% block contenido %}
+                <!--Codigo de cada página-->
+            
+            {% endblock  %}
+        </div>
+       <div>
+            <footer id="pie">
+                <p class="texto11">Veterinaria AAUP Ltda. © 2021</p> 
+          
+            </footer>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'fonts/style.css' %} " />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Ayuda a un peludo</title>
+</head>
+<body background="{% static 'img/original.jpg' %}">
+    
+    <header id="inicio">
+        <section class="logo">
+            <img src="{% static 'img/huellas.png' %}" alt="">
+            <img class="fotos-fin2" src="{% static 'img/nombre.png' %}" alt="">
+        </section> 
+        <nav>
+			            <a href="/#myCarousel">Inicio</a>
+                  <a href="/nosotros">Nosotros</a>
+			            <a href="/perros">Perros</a>
+                  <a href="/gatos">Gatos</a>
+                  <a href="/contacto">Contáctanos</a>
+                  <a href="/Clima">Clima</a>
+                  <a href="/geolocal">Ubicacion</a>
+                  <a href="/nuevaMascota">Agregar</a>
+                  <a href="/listamascotas">Lista</a>
+
+		</nav>   
+    </header>
+   <section id="medio">
+        <div class="container"> 
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <center><div class="carousel-inner">
+                <div class="item active">
+                  <img src="{% static 'img/1.jpg' %}" alt="perros1" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="{% static 'img/2.jpg' %}" alt="gatos" style="width:110%;" >
+                </div>
+              
+                <div class="item">
+                  <img src="{% static 'img/3.jpg' %}" alt="perros" style="width:100%;">
+                </div>
+              </div></center>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Siguente</span>
+              </a>
+            </div>
+          </div>
+    </section> 
+    
+    <footer id="pie">
+        <p class="texto11">Veterinaria AAUP Ltda. © 2021</p> 
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'fonts/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Perros</title>
+</head>
+<body background="{% static 'img/original.jpg' %}" >
+    <div>
+        <div>
+            <header id="inicio">
+                <div>
+                    <section class="logo">
+                        <img src="{% static 'img/huellas.png' %}" alt="">
+                        <img class="fotos-fin2" src="{% static 'img/nombre.png' %}" alt="">
+                    </section> 
+                </div>
+                <div>
+                    <nav>
+			      <a href="/#myCarousel">Inicio</a>
+                  <a href="/nosotros">Nosotros</a>
+			      <a href="/perros">Perros</a>
+                  <a href="/gatos">Gatos</a>
+                  <a href="/contacto">Contáctanos</a>
+                  <a href="/Clima">Clima</a>
+                  <a href="/geolocal">Ubicacion</a>
+                  <a href="/nuevaMascota">Agregar</a>
+                  <a href="/listamascotas">Lista</a>
+                
+                    </nav>  
+                </div>    
+            </header>
+        </div>
+        <div>
+            <section id="informacion">
+                <section id="ubicacion ">
+                    <p class="textop">Nachitotell</p>
+                    <a class= "foto-productos" href="/nachotell"><img class= "foto-productos" src="{% static 'img/nachitotell.jpg' %}" /> </a>
+                    <a href="/nachotell" class="textop1"  >Adoptar </a>
+                    
+                    
+                    <p class="textop2">Meliodas</p>
+                    <a class= "foto-productos1" href="/Meliodas"><img class= "foto-productos" src="{% static 'img/Meliodas.jpg' %}" /> </a>
+                    <a href="/Meliodas" class="textop1"  >Adoptar </a>
+            </section>
+            <section id="ubicacion ">
+                <p class="textop">Rudeus</p>
+                <a class= "foto-productos" href="/Rudeus"><img class= "foto-productos" src="{% static 'img/Rudeus.jpg' %}" /> </a>
+                <a href="/Rudeus" class="textop1"  > Adoptar </a>
+                <p class="textop2">Jey-Jey</p>
+                <a class= "foto-productos" href="/Jey-Jey"><img class= "foto-productos2" src="{% static 'img/Jey.jpg' %}" /> </a>
+                <a href="/Jey-Jey" class="textop1"  >Adoptar </a>       
+            </section>
+        </div>
+       <div>
+            <footer id="pie">
+                <p class="texto11">Veterinaria AAUP Ltda. © 2021</p> 
+          
+            </footer>
+        </div>
+    </div>    
+</body>
+</html>

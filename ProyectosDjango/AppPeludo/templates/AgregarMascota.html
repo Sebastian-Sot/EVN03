@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block titulo %}
+    Agregar Mascota
+{% endblock titulo %}
+
+{% block contenido %}
+    <center><h1>Agregar Nueva Mascota</h1>
+    
+    <form action="{% url 'guardarMascota' %}" method="POST">
+        {% csrf_token %}
+        <label for = "codigo">Código</label><br/>
+        <input type = "text" name ="codigo" /><br/>
+        
+        <label for = "nombre">Nombre Mascota</label><br/>
+        <input type = "text" name ="nombre" /><br/>
+
+        <label for = "nombre">Especie(Can o Felino)</label><br/>
+        <input type = "text" name ="especie" /><br/>
+
+        <input type = "submit" value = "Guardar Mascota" />
+    
+    </form> </center> 
+
+{% endblock  %}

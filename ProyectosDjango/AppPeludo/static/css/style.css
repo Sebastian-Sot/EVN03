@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Muli|Kanit');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    width: 600px*1px;
+}
+
+#inicio{
+    background: cadetblue;
+    height: 100px;
+    
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
+nav {
+    width: 26%;
+    padding-top: 30px;
+    font-family: 'calibri light', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    float: right;
+}
+
+nav a{
+    display: inline-block;
+    color: rgb(27, 26, 26);
+    text-decoration: none;
+    text-align: center;
+    width: 80px;
+}
+
+nav a:hover{ 
+    background-color: cadetblue;
+    border-bottom: solid 0px cadetblue;
+    text-align: center;
+}
+body {
+    width : 100%;
+    height: 90%;
+
+}
+
+
+
+#medio{
+    text-align: center;
+    background-image: "img/original.jpg";
+    width: 100%;
+}
+
+
+
+#fin{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.fotos-fin{
+    width: 40%;
+    text-align: center;
+}
+.fotos-fin2{
+    width: 80%;
+    text-align: center;
+}
+
+.texto{
+    font-family: 'Showcard Gothic';
+    font-size: 2.5em;
+    color: #000000;
+    font-weight:bolder ; 
+    text-align: center;
+}
+.texto11{
+    font-family: 'calibri';
+    font-size: 1.5em;
+    color: white;
+    font-weight:bolder; 
+    text-align: center;
+    
+    padding-top: 40px;
+}
+
+.texto2{
+    font-family: 'Open Sans', Arial;
+    font-size: 1em;
+    color:  #000;  
+    font-weight: bold; 
+    padding-top: 0px;
+}
+
+.texto3{
+    font-family: 'Open Sans', Arial;
+    font-size: 1em;
+    color:grey;  
+    font-weight: 900; 
+}
+
+#pie{
+    min-height: calc(100% - 4rem);
+    background:cadetblue;
+    height: 114px;
+    font-family: 'Open Sans', Arial;
+    color: #000000;
+    width: 100%;
+}
+
+
+
+#productos-s{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    column-count: 2;
+    text-align: center;
+}
+
+.foto-productos{
+    width: 25%;   
+    padding-top: 0px;
+    text-align: center;
+    padding-left: 50px; 
+}
+
+.foto-productos1{
+    width: 25%;   
+    padding-top: 10''0px;
+    text-align: center; 
+}
+
+.foto-productos-s{
+    width: 70%;   
+    padding-top: 120px;
+    text-align: center; 
+    padding-left: 50px;
+}
+
+.foto-productos-m{
+    width: 50%;   
+    padding-top: 113px;
+    text-align: center; 
+    padding-left: 50px;
+}
+
+.foto-nosotros{
+    width: 85%;   
+    padding-top: 100px;
+    text-align: center; 
+    padding-left: 50px;
+}
+
+.textop{
+    font-family: 'Showcard Gothic';
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-weight:bolder ; 
+    text-align: left;
+    padding-top: 110px;
+    padding-left: 400px;
+}
+.textop2{
+    font-family: 'Showcard Gothic';
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-weight:bolder ; 
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 400px;
+}
+
+.textop-s1{
+    font-family: 'Lucida Handwriting';
+    font-size: 1.5em;
+    color: black;
+    font-weight:bolder ; 
+    text-align: left;
+    padding-top: 40px;
+    
+}
+.textop-s{
+    font-family: 'Lucida Handwriting';
+    font-size: 3em;
+    color: black;
+    font-weight:bolder ; 
+    text-align: center;
+    padding-top: 15px;
+
+    
+}
+.textop-sp{
+    font-family: 'Lucida Handwriting';
+    font-size: 1em;
+    color: black;
+    font-weight:bolder; 
+    text-align: left;
+    padding-top: 170px;
+    padding-right: 10px;
+    
+}
+.textop-sp2{
+    font-family: 'calibri';
+    font-size: 2.5em;
+    color: black;
+    font-weight:bolder; 
+    text-align: left;
+    padding-top: 170px;
+    padding-right: 20px;
+    
+}
+.textop-sp3{
+    font-family: 'Calibri light';
+    font-size: 2em;
+    color: black;
+    font-weight:bolder; 
+    text-align: left;
+    padding-top: 350px;
+    padding-right: 10px;
+    
+}
+#ubicacion1{
+    text-align: left;
+    padding-right: 10 px;
+}
+#ubicacion{
+    background: #FFF;
+    text-align: right;
+}
+#informacion{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    column-count: 2;
+    text-align: center;
+}
+
+.textop1{
+    font-family: 'Showcard Gothic';
+    font-size: 2em;
+    color: black;
+    font-weight:bolder ; 
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 300px;
+    text-align: center;
+}
+
+
+.margenTop10 {
+    margin-top: 2%;
+}
+
+.footer {
+    height: 4rem;
+
+  }
+
+  #map {
+	height: 500px;
+	width: 100%;
+}

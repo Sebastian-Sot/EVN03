@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block titulo %}
+    Prueba
+{% endblock titulo %}
+
+{% block contenido %}
+
+    <h1>Página de prueba</h1>
+    <h2>Bienvenida {{nombre}}</h2>
+
+    <h3>La primera comida que te gusta es : {{comidas.2}}</h3>
+
+    <h3>Lista de Comidas</h3>
+    <ol>
+        {% for comida in comidas%}
+        <li>{{comida}}</li>
+
+        {% endfor %}
+    </ol>
+
+    <h3>{{nombre}}, tiene un hijo llamado {{hijo.nombre}} y su edad es {{hijo.edad}} </h3>
+
+
+{% endblock  %}

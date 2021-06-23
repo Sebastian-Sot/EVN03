@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'fonts/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Formulario</title>
+</head>
+<body background="{% static 'img/original.jpg' %}">
+    
+    <header id="inicio">
+        <section class="logo">
+            <img src="{% static 'img/huellas.png' %}" alt="">
+            <img class="fotos-fin2" src="{% static 'img/nombre.png' %}" alt="">
+        </section> 
+        <nav>
+			      <a href="/#myCarousel">Inicio</a>
+                  <a href="/nosotros">Nosotros</a>
+			      <a href="/perros">Perros</a>
+                  <a href="/gatos">Gatos</a>
+                  <a href="/contacto">Contáctanos</a>
+                  <a href="/Clima">Clima</a>
+                  <a href="/geolocal">Ubicacion</a>
+                  <a href="/nuevaMascota">Agregar</a>
+                  <a href="/listamascotas">Lista</a>
+		</nav>   
+    </header>}
+
+    
+    <section id="medio">
+        <div class="container"> 
+            <label>Estas a un paso de adoptar a tu mascota </label>
+            <form name="formulario" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text"  id="nombre" required name="nombre" size="30" placeholder="Ingrese Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number"  id="edad" size="30" required min="18" max="70" name="edad"  placeholder="Ingrese Edad">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="correo" required name="correo" size="30" placeholder="Ingresa tu eMail">
+                </div>
+                <div class="form-group">
+                    <label for="dir">Dirección</label>
+                    <input type="text"  id="dir" required name="dir" size="30"  placeholder="Ingrese Direccion">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel"  id="telefono" required name="telefono" pattern="[0-9]{9}" size="30" placeholder="Ingrese su telefono">
+                </div>
+                <div class="form-group">
+                    <label for="casilla">Aceptar terminos y condiciones </label>
+                    <input type="checkbox" class="form-check" id="casilla" required name="casilla" >
+                </div>
+                <div>
+                   
+                    <button type="submit" class="btn btn-primary" onclick="validar_envio()" >Enviar</button>
+                    <input type="reset" class="btn btn-outline-danger" value="Limpiar" />
+                </div>
+            </form>
+        
+        </div>
+    </section> 
+    
+    <footer id="pie">
+        <p class="texto11">Veterinaria AAUP Ltda. © 2021</p> 
+    </footer>
+
+
+    <script src="{% static 'js/scriptform.js' %}"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+</body>
+</html>
